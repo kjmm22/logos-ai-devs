@@ -28,5 +28,6 @@ Colab.
 
 El cuaderno también incluye `KM_NoResizeNet`, una variante con aproximadamente
 8 300 parámetros que elimina cualquier operación de `Resize` o `Crop` en el
+
 preprocesamiento. Gracias a `nn.AdaptiveAvgPool2d`, el modelo puede recibir
 imágenes en su tamaño original.

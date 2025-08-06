@@ -30,4 +30,6 @@ El cuaderno también incluye `KM_NoResizeNet`, una variante con aproximadamente
 8 300 parámetros que elimina cualquier operación de `Resize` o `Crop` en el
 
 preprocesamiento. Gracias a `nn.AdaptiveAvgPool2d`, el modelo puede recibir
-imágenes en su tamaño original.
+imágenes en su tamaño original. Esta versión reutiliza las mismas rutas de
+datos que el modelo base y reporta la *accuracy* de validación en cada época
+de entrenamiento.

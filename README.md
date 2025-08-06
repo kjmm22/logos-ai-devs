@@ -23,3 +23,10 @@ convolucional ligera utilizando PyTorch.
 El notebook alcanza una precisión cercana al 98 % en validación y sirve como
 base para experimentar con arquitecturas pequeñas de visión artificial en
 Colab.
+
+### Nuevo modelo sin redimensionamiento
+
+El archivo `KM_NoResizeNet.py` replica la arquitectura de aproximadamente 8 300
+parámetros pero elimina cualquier operación de `Resize` o `Crop` en el
+preprocesamiento. Gracias a `nn.AdaptiveAvgPool2d`, el modelo puede recibir
+imágenes en su tamaño original.
